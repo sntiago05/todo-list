@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="ligth">
+    <header>
+      <h1 class="title">Todo List App</h1>
+      <div class="wrapper-search">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-note" placeholder="search note" />
+      </div>
+      <button class="add-note">
+        new note <span><i class="fa-solid fa-plus"></i></span>
+      </button>
+      <div class="wrapper-filter">
+        <select name="filter" id="filter" class="filter">
+          <optgroup label="states">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="incompleted">Incompleted</option>
+          </optgroup>
+        </select>
+        <button class="btn-theme">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="list">
+        <ul class="list__notes">
+        </ul>
+      </section>
+      <button class="add-note"><i class="fa-solid fa-plus"></i></button>
+    </main>
+    <section class="popup">
+      <h2 class="popup__title">Add Note</h2>
+      <input type="text" class="new-note" placeholder="new note" />
+      <button class="btn-cancel">Cancel</button>
+      <button class="btn-apply">Apply</button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
